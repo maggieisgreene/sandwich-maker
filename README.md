@@ -1,1 +1,1 @@
-# sandwich-makergit
+# sandwich-maker
