@@ -1,12 +1,12 @@
 import utilities from '../helpers/utilities.js';
 
 const veggies = [
-    {id:'veggie1', name:'Red Onions', price: 0},
-    {id:'veggie2', name:'Bread & Butter Pickles', price: 0},
-    {id:'veggie3', name:'Cucumber', price: 0},
-    {id:'veggie4', name:'Banana Peppers', price: 0},
-    {id:'veggie5', name:'Spinach', price: 0},
-]
+    {id: 'veggie1', name:'Red Onions', price: 0},
+    {id: 'veggie2', name:'Bread & Butter Pickles', price: 0},
+    {id: 'veggie3', name:'Cucumber', price: 0},
+    {id: 'veggie4', name:'Banana Peppers', price: 0},
+    {id: 'veggie5', name:'Spinach', price: 0}
+];
 
 const printVeggieOptions = () => {
     let domString = '';
