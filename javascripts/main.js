@@ -10,8 +10,8 @@ const init = () => {
     cheese.printCheeseOptions();
     condiments.printCondimentOptions();
     meat.printMeatOptions();
-    order.printOrderButton();
     veggies.printVeggieOptions();
+    order.printOrderButton();
 };
 
 init();
