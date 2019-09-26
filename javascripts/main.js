@@ -1,1 +1,7 @@
-console.log('bite me');
+import bread from './components/bread.js';
+
+const init = () => {
+    bread.printBreadOptions();
+};
+
+init();
