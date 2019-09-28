@@ -11,7 +11,7 @@ const createFinalOrder = (arr) => {
     for (let i = 0; i < arr.length; i ++) {
         domString2 += `<h6>${arr[i].name} $${(arr[i].price/100).toFixed(2)}</h6>`;
     }
-    domString2 += `<h6>Final Price: $${(total/100).toFixed(2)}</h6>`
+    domString2 += `<h4>Final Price: $${(total/100).toFixed(2)}</h4>`
     utilities.printToDom('final-selections', domString2);
 };
 
