@@ -1,11 +1,11 @@
 import utilities from '../helpers/utilities.js';
 
 const cheeses = [
-    {id:'cheese1', name:'Provolone', price: 0 },
-    {id:'cheese2', name:'American', price: 0 },
-    {id:'cheese3', name:'Swiss', price: 0 },
-    {id:'cheese4', name:'Pepperjack', price: 0 },
-    {id:'cheese5', name:'Cheddar', price: 0 },
+    {id:'cheese1', name:'Provolone', price: '1.00'},
+    {id:'cheese2', name:'American', price: '1.00'},
+    {id:'cheese3', name:'Swiss', price: '1.00'},
+    {id:'cheese4', name:'Pepperjack', price: '1.00'},
+    {id:'cheese5', name:'Cheddar', price: '1.00'},
 ]
 
 const getSelectedCheeses = () => {
