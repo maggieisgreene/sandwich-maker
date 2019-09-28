@@ -1,12 +1,25 @@
 import utilities from '../helpers/utilities.js';
 
 const cheeses = [
-    {id:'cheese1', name:'Provolone', price: 0 },
-    {id:'cheese2', name:'American', price: 0 },
-    {id:'cheese3', name:'Swiss', price: 0 },
-    {id:'cheese4', name:'Pepperjack', price: 0 },
-    {id:'cheese5', name:'Cheddar', price: 0 },
+    {id:'cheese1', name:'Provolone', price: '1.00'},
+    {id:'cheese2', name:'American', price: '1.00'},
+    {id:'cheese3', name:'Swiss', price: '1.00'},
+    {id:'cheese4', name:'Pepperjack', price: '1.00'},
+    {id:'cheese5', name:'Cheddar', price: '1.00'},
 ]
+
+const getSelectedCheeses = () => {
+    const selectedCheeses = [];
+    const cheeseCheckboxes = document.getElementsByClassName('cheese');
+    for (let j = 0; j < cheeseCheckboxes.length; j ++) {
+        for (let k = 0; k < cheeses.length; k ++) {
+            if(cheeseCheckboxes[j].checked && cheeseCheckboxes[j].id === cheeses[k].id) {
+                selectedCheeses.push(cheeses[k]);
+            }
+        }
+    }
+    return selectedCheeses;
+};
 
 const printCheeseOptions = () => {
     let domString = '';
@@ -20,4 +33,4 @@ const printCheeseOptions = () => {
     }
 };
 
-export default { printCheeseOptions };
+export default { printCheeseOptions, getSelectedCheeses };
